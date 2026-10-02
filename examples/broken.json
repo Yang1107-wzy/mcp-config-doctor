@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "missing-runtime": {
+      "command": "definitely-not-installed-mcp-runtime",
+      "args": "--serve"
+    },
+    "missing-credential": {
+      "url": "https://example.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:MCP_DOCTOR_DEMO_MISSING_TOKEN}"
+      }
+    },
+    "plain-http": {
+      "url": "http://example.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "local": {
+      "url": "http://localhost:8000/mcp"
+    },
+    "remote": {
+      "type": "http",
+      "url": "https://example.com/mcp"
+    },
+    "paused": {
+      "disabled": true
+    }
+  }
+}

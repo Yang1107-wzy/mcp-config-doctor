@@ -1,0 +1,9 @@
+$ mcp-config-doctor examples/broken.json
+
+3 servers | 3 errors | 1 warnings | 0 disabled
+ERROR [command-not-found] "missing-runtime": Command is not executable or is absent from the current PATH.
+ERROR [invalid-args] "missing-runtime": args must be an array of strings.
+ERROR [missing-env] "missing-credential": Environment variable MCP_DOCTOR_DEMO_MISSING_TOKEN is unset or empty.
+WARNING [insecure-http] "plain-http": Remote HTTP traffic is unencrypted; consider HTTPS.
+
+Exit code: 1

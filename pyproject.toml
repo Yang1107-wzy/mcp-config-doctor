@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-config-doctor"
+version = "1.0.0"
+description = "Offline MCP configuration checks before starting a client."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Zhengyang Wang"}]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+dependencies = []
+
+[project.scripts]
+mcp-config-doctor = "mcp_config_doctor.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Yang1107-wzy/mcp-config-doctor"
+Issues = "https://github.com/Yang1107-wzy/mcp-config-doctor/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B"]
